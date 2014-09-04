@@ -1,0 +1,7 @@
+library rxuptime
+exports
+        RXMSCOUNT    = RxMSCount
+        RXTMRFREQ    = RxTmrFreq
+        RXTMRTIME    = RxTmrTime
+        RXLOADUPTIME = RxLoadUptime;
+        RXDROPUPTIME = RxDropUptime;

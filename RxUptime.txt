@@ -1,0 +1,34 @@
+RxUptime - OS/2 Warp REXX extension DLL for getting system uptime
+           information from DosQuerySysInfo() and
+           DosTmrQueryFreq()/DosTmrQueryTime().
+
+Written by: Mike Ruskai <thannymeister@yahoo.com>
+
+This REXX extension DLL is released into the public domain.  Use at your
+own risk.
+
+Functions:
+
+RxLoadUptime - Load all uptime functions.
+
+RxDropUptime - Drop all uptime functions.
+
+RxMSCount    - Query running millisecond count via DosQuerySysInfo().
+               Returns the number of milliseconds, or -1 if there was an
+               error during execution.
+
+RxTmrFreq    - Query CPU timer frequency via DosTmrQueryFreq().
+               Returns the number of Hertz, or -1 if there was an error.
+
+RxTmrTime    - Query CPU timer count via DosTmrQueryTime().
+               Returns the number of cycles, or -1 if there was an error.
+
+All functions take no arguments.  I seem to recall reading somewhere that
+the DosTmr*() API's were added with Warp 4, so functionality under Warp 3
+is indeterminate.
+
+See the included uptime.cmd for an example.
+
+The source and module definition file are included, and may be modified and
+redistributed under another package name.  No derivative of the code may
+be sold.
